@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proverbs Verse Generator</title>
+  <style>/* Same CSS as before */</style>
+</head>
+<body>
+  <h1>📖 Random Proverbs Verse</h1>
+  <p id="verse">Click the button to get a verse</p>
+  <button onclick="showVerse()">Get Verse</button>
+  <script>
+    const proverbs = [ "Proverbs 1:7 - The fear of the Lord is the beginning of knowledge, but fools despise wisdom and instruction.",
+      "Proverbs 3:5-6 - Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight.",
+      "Proverbs 4:23 - Above all else, guard your heart, for everything you do flows from it.",
+      "Proverbs 10:12 - Hatred stirs up conflict, but love covers over all wrongs.",
+      "Proverbs 11:25 - A generous person will prosper; whoever refreshes others will be refreshed.",
+      "Proverbs 12:18 - The words of the reckless pierce like swords, but the tongue of the wise brings healing.",
+      "Proverbs 13:20 - Walk with the wise and become wise, for a companion of fools suffers harm.",
+      "Proverbs 14:29 - Whoever is patient has great understanding, but one who is quick-tempered displays folly.",
+      "Proverbs 15:1 - A gentle answer turns away wrath, but a harsh word stirs up anger.",
+      "Proverbs 16:3 - Commit to the Lord whatever you do, and he will establish your plans.",
+      "Proverbs 16:9 - In their hearts humans plan their course, but the Lord establishes their steps.",
+      "Proverbs 17:22 - A cheerful heart is good medicine, but a crushed spirit dries up the bones.",
+      "Proverbs 18:10 - The name of the Lord is a fortified tower; the righteous run to it and are safe.",
+      "Proverbs 18:21 - The tongue has the power of life and death, and those who love it will eat its fruit.",
+      "Proverbs 19:21 - Many are the plans in a person’s heart, but it is the Lord’s purpose that prevails.",
+      "Proverbs 20:22 - Do not say, 'I’ll pay you back for this wrong!' Wait for the Lord, and he will avenge you.",
+      "Proverbs 21:2 - A person may think their own ways are right, but the Lord weighs the heart.",
+      "Proverbs 22:6 - Start children off on the way they should go, and even when they are old they will not turn from it.",
+      "Proverbs 27:17 - As iron sharpens iron, so one person sharpens another.",
+      "Proverbs 31:30 - Charm is deceptive, and beauty is fleeting; but a woman who fears the Lord is to be praised." ];
+    function showVerse() {
+      const randomIndex = Math.floor(Math.random() * proverbs.length);
+      document.getElementById('verse').innerText = proverbs[randomIndex];
+    }
+  </script>
+</body>
+</html>
